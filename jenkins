@@ -8,12 +8,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
+       // stage('Checkout Code') {
+      //      steps {
                 // Checkout the repository
-                git 'https://github.com/michaelemad7/myrepo'
-            }
-        }
+             //   git 'https://github.com/michaelemad7/myrepo'
+     //       }
+       // }
 
         stage('Build Docker Image') {
             steps {
