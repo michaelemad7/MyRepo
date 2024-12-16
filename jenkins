@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'nodeapp'
-        DOCKER_REGISTRY = 'myrepo'  // Example: docker.io
-        DOCKER_TAG = "1" // Unique tag per branch/build
+        DOCKER_REGISTRY = 'MyRepo'  // Example: docker.io
+        DOCKER_TAG = "latest" // Unique tag per branch/build
     }
 
     stages {
