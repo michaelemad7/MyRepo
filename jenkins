@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'Myrepo'
-        DOCKER_REGISTRY = 'michaelemad'  // Example: docker.io
+        DOCKER_IMAGE = 'nodeapp'
+        DOCKER_REGISTRY = 'michaelemad/MyRepo'  // Example: docker.io
         DOCKER_TAG = "latest" // Unique tag per branch/build
     }
 
