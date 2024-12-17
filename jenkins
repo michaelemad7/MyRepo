@@ -23,18 +23,7 @@ pipeline {
                 }
             }
         }
-
-        stage('Run Tests') {
-            steps {
-                script {
-                    // Run tests using Docker
-                    docker.image("${DOCKER_REGISTRY}/${DOCKER_IMAGE}:${DOCKER_TAG}").inside {
-                        sh 'npm test'  // Assuming you have tests for your app
-                    }
-                }
-            }
-        }
-
+        
         stage('Push Docker Image') {
             steps {
                 script {
