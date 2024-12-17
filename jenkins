@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'myrepo'
-        DOCKER_REGISTRY = 'michaelemad/'  // Example: docker.io
+        DOCKER_REGISTRY = 'michaelemad'  // Example: docker.io
         DOCKER_TAG = "latest" // Unique tag per branch/build
     }
 
