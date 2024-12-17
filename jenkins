@@ -37,11 +37,12 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                // Deploy your application (this is optional, depends on your setup)
-                echo 'Deploying Docker container...'
-                // You can trigger a deployment here using a Kubernetes, Docker Swarm, or other method
-            }
+               script {
+                    sh 'docker run -d -p 8000:3000 --name my-app michaelemad/myrepo:latest'
+                  }
+             }
         }
+
     }
 
     post {
