@@ -6,7 +6,7 @@ const port = 3000;
 
 // Simple route to test the app
 app.get('/', (req, res) => {
-  res.send('Thanks Eng Kareem For your Effort');
+  res.send('Thanks Eui For Your Effort');
 });
 
 app.listen(port, () => {
